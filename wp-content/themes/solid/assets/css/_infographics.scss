@@ -1,0 +1,312 @@
+.infographics{
+  .block-title{
+    color: $color-blue;
+    margin-bottom: 32px;
+
+    @media(max-width: 992px){
+      margin-bottom: 30px;
+    }
+
+    @media(max-width: 767px){
+      margin-bottom: 25px;
+    }
+
+    @media(max-width: 575px){
+      margin-bottom: 20px;
+    }
+
+    @media(max-width: 440px){
+      margin-bottom: 15px;
+    }
+  }
+
+  .infographic-wrapper{
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @media(max-width: 767px){
+      margin-bottom: 0;
+    }
+
+    .control{
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &.prev{
+        left: 40px;
+      }
+
+      &.next{
+        right: 40px;
+      }
+    }
+
+    .infographic-slider{
+      margin: 0 auto;
+
+      @media(max-width: 767px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .slick-track{
+        display: flex;
+      }
+    }
+
+    .item{
+      width: 270px !important;
+      margin: 0 40px;
+      border-radius: 16px;
+      background-color: $color-olive;
+      box-shadow: 0px 4px 7px 0px rgba(156, 139, 48, 0.10);
+      padding: 46px 15px;
+      text-align: center;
+      height: auto;
+
+      @media(max-width: 1200px){
+        width: 220px !important;
+        margin: 0 30px;
+      }
+
+      @media(max-width: 992px){
+        margin: 0 15px;
+        width: 190px !important;
+      }
+
+      @media(max-width: 767px){
+        width: 100% !important;
+        margin: 0 0 30px 0;
+      }
+
+      @media(max-width: 575px){
+        padding: 24px 15px;
+      }
+
+      .name{
+        font-family: $f-gopher-bold;
+        font-size: 64px;
+        line-height: 1;
+        color: $color-light-blue;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media(max-width: 992px){
+          font-size: 54px;
+        }
+
+        @media(max-width: 575px){
+          font-size: 44px;
+          margin-bottom: 10px;
+        }
+
+        @media(max-width: 440px){
+          font-size: 32px;
+          margin-bottom: 5px;
+        }
+
+        .odometer{
+          font-family: $f-gopher-bold;
+          font-size: 64px;
+          line-height: 1;
+          color: $color-light-blue;
+
+          @media(max-width: 992px){
+            font-size: 54px;
+          }
+
+          @media(max-width: 575px){
+            font-size: 44px;
+          }
+
+          @media(max-width: 440px){
+            font-size: 32px;
+          }
+        }
+
+        .text-symbol{
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .description{
+        margin-bottom: 0;
+        color: $color-blue;
+        font-family: $f-S-bold;
+
+        @media(max-width: 440px){
+          font-size: 14px;
+        }
+      }
+
+      &:nth-child(1),
+      &:nth-child(2){
+        @media(max-width: 767px){
+          width: calc(50% - 15px) !important;
+        }
+      }
+    }
+  }
+
+  .content{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    z-index: 1;
+
+    @media(max-width: 767px){
+      flex-wrap: wrap;
+    }
+
+    .assertion-list{
+      position: relative;
+      border-radius: 16px;
+      background: $color-blue;
+      padding: 33px 200px 33px 33px;
+      margin: 0;
+      width: 770px;
+
+      @media(max-width: 767px){
+        width: 100%;
+        padding: 30px;
+        margin-bottom: 20px;
+      }
+
+      @media(max-width: 440px){
+        padding: 15px;
+      }
+
+      li{
+        list-style: none;
+        position: relative;
+        margin-bottom: 22px;
+        color: #ffffff;
+        padding-left: 30px;
+
+        @media(max-width: 440px){
+          font-size: 14px;
+          margin-bottom: 15px;
+        }
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+        svg{
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+
+    .image-card{
+      width: 370px;
+      position: relative;
+      margin-left: -178px;
+      /*position: absolute;
+      top: 0;
+      right: 15px;*/
+      z-index: 2;
+
+      @media(max-width: 767px){
+        margin: 0 auto 30px;
+      }
+
+      @media(max-width: 440px){
+        width: 90%;
+      }
+
+      img{
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 2;
+      }
+
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: $color-olive;
+        border-radius: 16px;
+        height: 200px;
+        box-shadow: 0px 4px 7px 0px rgba(156, 139, 48, 0.10);
+      }
+
+      .card-name{
+        position: absolute;
+        border-radius: 6px;
+        padding: 7px 16px;
+        bottom: -31px;
+        left: 55%;
+        transform: translateX(-50%);
+        z-index: 3;
+        text-align: center;
+        width: max-content;
+
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: 6px;
+          border: 2.874px solid #262961;
+          background-color: #ffffff;
+          z-index: 2;
+        }
+
+        &:after{
+          content: '';
+          position: absolute;
+          top: -7px;
+          left: -12px;
+          width: 100%;
+          height: 100%;
+          border-radius: 6px;
+          border: 2.874px solid #262961;
+          background-color: $color-green;
+          z-index: 1;
+        }
+
+        .position{
+          position: relative;
+          z-index: 3;
+          font-family: $f-gopher-bold;
+          margin-bottom: 0;
+          color: $color-blue;
+
+          @media(max-width: 440px){
+            font-size: 16px;
+          }
+
+        }
+
+        .name{
+          position: relative;
+          z-index: 3;
+          color: $color-blue;
+          margin-bottom: 0;
+          font-family: $f-nova-bold;
+
+          @media(max-width: 440px){
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

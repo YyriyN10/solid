@@ -1,0 +1,22 @@
+.privacy-wrapper{
+  padding-top: 140px;
+  padding-bottom: 64px;
+  background-color: #ffffff;
+
+  .article-title {
+    padding: 14px 0;
+    border-top: 1px solid $color-blue;
+    border-bottom: 1px solid $color-blue;
+    margin-bottom: 50px;
+    font-family: $f-nova-bold;
+    color: $color-blue;
+    font-size: 36px;
+    line-height: 128%;
+  }
+
+  p{
+    margin-bottom: 20px;
+    color: $color-blue;
+  }
+
+}

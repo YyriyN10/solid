@@ -1,0 +1,27 @@
+
+/*--- FONTS ---*/
+
+$f-main: "ProximaNova-Regular";
+$f-reg-i: "ProximaNova-Regular-Italic";
+$f-med: "Gopher-Medium";
+$f-S-bold: "ProximaNova-Semibold";
+$f-nova-bold: "ProximaNova-Bold";
+$f-gopher-bold: "Gopher-Bold";
+$f-gopher-reg: "Gopher-Regular";
+
+/*--- COLORS ---*/
+
+$color-blue: #262961;
+$color-light-blue: #40439D;
+$color-olive: #FFFDC6;
+$color-turquoise: #00C3EB;
+$color-green: #3AFFDC;
+$color-pink: #F4259A;
+
+$accent: #ffffff;
+
+@media (min-width: 1200px){
+  .container {
+    max-width: 1200px;
+  }
+}
